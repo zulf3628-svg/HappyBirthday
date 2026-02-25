@@ -40,7 +40,7 @@
      <div id="kadoIn">
        <!-- Tombol Surat --><img src="https://feeldreams.github.io/kadoin.png"/>
      </div>
-     <p id="ket">Klik Kadonya!</p>
+     <p id="ket">Klik cepat2!</p>
 
      <div class="kumpulanstiker">
          <!-- Stiker untuk Konten -->
@@ -57,42 +57,42 @@
      <p id="halo" class="halo"></p>
      
      <div><blockquote id='bq' data-text='㋡'>
-       <p id="kalimat">Aku Ada Sesuatu Nih 🤣❤️</p>
+       <p id="kalimat">kita ada benda nak bagitahu ni❤️</p>
 
-       <p id="pesan1">Klik 4 LOVE di Bawah! 😆❤️</p>
+       <p id="pesan1">kena tekan dulu! (yang bawah tu)❤️</p>
        <div id="kolombaru">
-         <li id="lv1">🤍</li>
-         <li id="lv2">🤍</li>
-         <li id="lv3">🤍</li>
-         <li id="lv4">🤍</li>
+         <li id="lv1">M</li>
+         <li id="lv2">I</li>
+         <li id="lv3">R</li>
+         <li id="lv4">A</li>
        </div>
 
-       <p id="pesan2">Tunggu...</p>
+       <p id="pesan2">Tunggu eh...</p>
        <!-- Pesan -->
-       <p id="pesan3">Ciee.. Ada yang Ultah Nih 🤣❤️</p>
+       <p id="pesan3">SURPRISE!!!(jujur tk terkejut pun an haha) HAPPY BIRTHDAY❤️</p>
        <p id="pesan4">Happy Birthday, </p>
-       <p id="pesan5" class="gaya2">Nambah tua aja ya, hehe</p>
-       <p id="pesan6" class="gaya2">Moga panjang umur biar tiap tahun bisa traktirin aku wkwk 😆❤️</p>
-       <p id="pesan7" class="gaya2">Sehat selalu ya!</p>
+       <p id="pesan5" class="gaya2">Kesian makin tua pulak dia, hehe</p>
+       <p id="pesan6" class="gaya2">Tq sweetie for everything that you had done to me. You changed me and make me become the happiest man in the world. Today is your day and i hope that you can find happiness in your life. Work hard and make yourself proud, not others okay. If you want to cry then cry, if you want to slap me than go on, hahaha. One last think, no matter how hard your life is, or how hard it gets, even though we're miles apart, I'm always on your side. Happy birthday to you sweetheart. I love you so much. Till death do us apart, untill fate break us apart. I'll always remember, you're my firefly and I'm your caelus. Hihihi HBTY.❤️</p>
+       <p id="pesan7" class="gaya2">Wish you the best tau!</p>
 
-       <p id="pesan8" class="gaya2">Canda wkwwk :v</p>
-       <p id="pesan9" class="gaya2">Oh iya, semoga di hari spesialmu ini kamu dapat menjadi pribadi yang lebih baik yaa.. 🥳❤️</p>
-       <p id="pesan10" class="gaya2">Happy Level Up Day!! 🥳</p>
+       <p id="pesan8" class="gaya2">Gurau2 hahaha :v</p>
+       <p id="pesan9" class="gaya2">semoga sweetie semakin pandai(walaupun dah pandai),semakin cantik jelita(walaupun dah macm bidadari) dan semakin mencintaiku hihihi❤️</p>
+       <p id="pesan10" class="gaya2">Happy Birthday my firefly!! 🥳</p>
 
        <!-- Tombol Lanjut -->
-       <p id="opsL">Klik untuk Lanjut</p>
+       <p id="opsL">tekan tau!</p>
      </blockquote></div>
 
      <!-- Tombol Kirim Pesan -->
-     <div id="Tombol"><a id="By">&#128140; Lanjut</a></div>
+     <div id="Tombol"><a id="By">&#128140; sambungt</a></div>
 
      <!-- Pesan Tambahan -->
-     <p id="katatambahan" class="sembunyi">Gajadi deh soalnya kamu bau wleee 😜</p>
+     <p id="katatambahan" class="sembunyi">hehe yang ni secret</p>
      
      <!-- Pesan Ditolak -->
      <div id="pesanditolak">
        <img id="stikerditolak" src="https://feeldreams.github.io/weee.gif"/>
-       <p id="kataditolak">Yaudah kalo gamau mh 😜</p>
+       <p id="kataditolak">takleh kena ambik jugk.</p>
      </div>
 
    </div>
@@ -104,26 +104,27 @@
   
   async function inipesan(){
     var { value: nama } = await swals.fire({
-           title: 'Masukin Nama Kamu', input: 'text',
+           title: 'masukkan Nama princess kita', input: 'text',
        });
        if(nama && nama.length < 11){
          window.nama = nama;
          vketikhalo="Hai, " + nama + " ✨";
          mulainama();
          } else {
-           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, ya!');inipesan();
+           await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 10 karakter, tau!');inipesan();
     }
   }
 
   //Variable Pertanyaan Akhir
-  var tanya = 'Mau Kado Gak Nih? 😶❤️';
-  var opstanya = 'Ayo jawab 😆';
+  var tanya = 'Nak hadiah tak? 😶❤️';
+  var opstanya = 'ha jawab2 jgn tak jawab 😆';
   var tompositif = 'Mau';
   var tomnegatif = 'Engga';
     
-    async function menuju(){pesanwhatsapp = "Makasii udah ngucapin " + nama + " ultah ><";await swals.fire('OK!', 'Kirim jawabannya ke WhatsApp aku, ya!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+    async function menuju(){pesanwhatsapp = "thank you sebab wish " + nama + " hari jadi ><";await swals.fire('OK!', 'reply kat WhatsApp je!', 'success');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
 </script>
 <script src="https://malasid.github.io/html/hbd.js"></script>
 <!-- Sampai Sini -->
 </body>
+
   </html>
